@@ -795,41 +795,41 @@ footer {
     width: calc(50% - 10px) !important;
   }
 }
-
 @media (max-width: 768px) {
+  /* Tighten top banner spacing for mobile screens */
   .top-bar {
-    padding: 8px 20px;
+    padding: 6px 15px !important;
   }
   
   .top-bar-content {
-    flex-direction: column;
-    gap: 4px;
+    flex-direction: column !important;
+    gap: 2px !important;
     text-align: center;
   }
 
+  /* Compact the main navbar container */
   .navbar {
-    padding: 15px 20px;
+    padding: 10px 15px !important;
   }
 
+  .logo {
+    font-size: 20px !important;
+  }
+
+  /* Ensure the dropdown menu sits cleanly right under the navbar without gaps */
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%; /* Drops cleanly below the relative nav boundary wrapper */
-    right: 20px;
+    top: 100%; 
+    right: 15px;
     background: #1e293b;
-    padding: 15px;
-    border-radius: 10px;
-    width: 200px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    padding: 12px;
+    border-radius: 8px;
+    width: 180px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
     border: 1px solid rgba(56, 189, 248, 0.1);
-    gap: 12px;
-  }
-
-  .nav-links li {
-    margin: 0;
-    width: 100%;
-    text-align: left;
+    gap: 10px;
   }
 
   .nav-links.active {
@@ -837,11 +837,39 @@ footer {
   }
 
   .menu-btn {
-    display: block;
+    display: block !important;
+  }
+
+  /* Prevent the Hero Section from getting cut off under the fixed header */
+  .hero {
+    flex-direction: column-reverse !important; /* Puts image on top, text below for mobile */
+    text-align: center !important;
+    padding: 120px 20px 30px 20px !important; /* Adjusts top padding so text doesn't hide behind header */
+    min-height: auto !important;
+  }
+
+  .hero-image {
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    width: 200px !important; /* Scales down your image size so it fits perfectly on mobile screens */
+  }
+
+  .hero-content h1 {
+    font-size: 32px !important; /* Prevents long text from overflowing horizontally */
   }
 }
 
 @media (max-width: 600px) {
+  section {
+    padding: 30px 15px !important; /* Drastically drops excessive side padding on small mobile widths */
+  }
+  
+  section h2 {
+    font-size: 26px !important;
+    margin-bottom: 15px !important;
+  }
   .contact-box-card {
     width: 100% !important;
   }
