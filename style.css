@@ -306,7 +306,7 @@ header {
   .hero {
     flex-direction: column-reverse !important; /* Puts image on top, text below for mobile */
     text-align: center !important;
-    padding: 120px 60px 60px 60px !important; /* FIXED: Reduced from 130px to close the upper gap */
+    padding: 160px 80px 80px 80px !important; /* FIXED: Reduced from 130px to close the upper gap */
     min-height: auto !important; /* FIXED: Overrides the height calculation to let content sit naturally */
     height: auto !important;
   }
