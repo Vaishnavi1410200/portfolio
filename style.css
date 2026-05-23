@@ -150,13 +150,15 @@ header {
 }
 
 /* ================= HERO ================= */
+
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 120px 80px 40px 80px; /* Reduced bottom padding to transition tightly to About section */
-  min-height: calc(100vh - 40px);
-}
+    flex-direction: column-reverse !important; /* Puts image on top, text below for mobile */
+    text-align: center !important;
+    padding: 90px 20px 30px 20px !important; /* FIXED: Reduced from 130px to close the upper gap */
+    min-height: auto !important; /* FIXED: Overrides the height calculation to let content sit naturally */
+    height: auto !important;
+  }
+
 
 .hero-content h1 {
   font-size: 45px;
