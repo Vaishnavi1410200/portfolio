@@ -161,12 +161,12 @@ header {
 
 
 .hero-content h1 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .hero-content h2 {
   margin-top: 10px;
-  font-size: 22px;
+  font-size: 15px;
   color: #38bdf8;
 }
 
@@ -197,7 +197,7 @@ header {
 
 /* ================= BUTTONS ================= */
 .hero-buttons {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .btn {
