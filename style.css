@@ -302,13 +302,14 @@ header {
 
 /* ================= HERO ================= */
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px 80px 40px 80px; /* Make sure the top padding here isn't something huge like 200px */
-  min-height: calc(100vh - 40px);
-}
+/* Prevent the Hero Section from getting cut off under the fixed header */
+  .hero {
+    flex-direction: column-reverse !important; /* Puts image on top, text below for mobile */
+    text-align: center !important;
+    padding: 120px 60px 60px 60px !important; /* FIXED: Reduced from 130px to close the upper gap */
+    min-height: auto !important; /* FIXED: Overrides the height calculation to let content sit naturally */
+    height: auto !important;
+  }
 
 
 
