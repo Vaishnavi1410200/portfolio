@@ -844,7 +844,7 @@ footer {
   .hero {
     flex-direction: column-reverse !important; /* Puts image on top, text below for mobile */
     text-align: center !important;
-    padding: 120px 20px 30px 20px !important; /* Adjusts top padding so text doesn't hide behind header */
+    padding: 130px 20px 30px 20px !important; /* Adjusts top padding so text doesn't hide behind header */
     min-height: auto !important;
   }
 
@@ -870,6 +870,12 @@ footer {
     font-size: 26px !important;
     margin-bottom: 15px !important;
   }
+
+  .contact-cards-grid {
+    flex-direction: column !important; /* Makes contact cards stack vertically on small phones */
+    gap: 15px !important;
+  }
+  
   .contact-box-card {
     width: 100% !important;
   }
