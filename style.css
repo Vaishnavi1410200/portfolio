@@ -197,7 +197,7 @@ header {
 
 /* ================= BUTTONS ================= */
 .hero-buttons {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .btn {
@@ -225,7 +225,7 @@ header {
 
 /* ================= SOCIAL ================= */
 .social-icons {
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 .social-icons a {
@@ -247,7 +247,7 @@ section {
 
 section h2 {
   font-size: 32px;
-  margin-bottom: 25px; /* Unified heading separation gap spacing */
+  margin-bottom: 40px; /* Unified heading separation gap spacing */
   color: #38bdf8;
   text-shadow: 0 0 10px #38bdf8;
 }
@@ -261,7 +261,7 @@ section h2 {
 .about h2 {
   font-size: 32px;
   color: #38bdf8;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
 }
 
